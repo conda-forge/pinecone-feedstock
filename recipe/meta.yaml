@@ -1,5 +1,5 @@
 {% set name = "pinecone" %}
-{% set version = "5.4.2" %}
+{% set version = "7.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pinecone-{{ version }}.tar.gz
-  sha256: 23e8aaa73b400bb11a3b626c4129284fb170f19025b82f65bd89cbb0dab2b873
+  sha256: 49ff7b0f5be4a2ddec5aaa709758a9f2df56baa58ad46507d081409e246a81ec
 
 build:
   noarch: python
