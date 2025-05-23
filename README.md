@@ -9,6 +9,10 @@ Package license: Apache-2.0
 
 Summary: Pinecone client and SDK
 
+Development: https://github.com/pinecone-io/pinecone-python-client
+
+Documentation: https://docs.pinecone.io/guides/get-started/overview
+
 Current build status
 ====================
 
@@ -144,4 +148,5 @@ Feedstock Maintainers
 =====================
 
 * [@isuruf](https://github.com/isuruf/)
+* [@xylar](https://github.com/xylar/)
 
