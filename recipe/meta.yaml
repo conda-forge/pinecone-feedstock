@@ -11,6 +11,8 @@ source:
 
 build:
   noarch: python
+  entry_points:
+    - repl = scripts.repl:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
@@ -27,6 +29,7 @@ requirements:
     - certifi >=2019.11.17
     - pinecone-plugin-interface >=0.0.7,<0.0.8
     - python-dateutil >=2.5.3
+    - pinecone-plugin-assistant >=1.6.0,<2.0.0
   run_constrained:
     - googleapis-common-protos >=11.66.0
     # most restrictive
@@ -35,12 +38,14 @@ requirements:
     - protobuf >=5.29,<6.0.0
     - protoc-gen-openapiv2 >=0.0.1,<0.0.2
     - aiohttp >=3.9.0
+    - aiohttp-retry >=2.9.1,<3.0.0
 
 test:
   imports:
     - pinecone
   commands:
     - pip check
+    - repl --help
   requires:
     - python {{ python_min }}
     - pip
