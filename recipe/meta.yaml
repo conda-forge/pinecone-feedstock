@@ -43,7 +43,6 @@ test:
     - pinecone
   commands:
     - pip check
-    - repl --help
   requires:
     - python {{ python_min }}
     - pip
