@@ -11,8 +11,6 @@ source:
 
 build:
   noarch: python
-  entry_points:
-    - repl = scripts.repl:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
