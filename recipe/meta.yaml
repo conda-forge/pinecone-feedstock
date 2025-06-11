@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -28,7 +28,7 @@ requirements:
     - pinecone-plugin-interface >=0.0.7,<0.0.8
     - python-dateutil >=2.5.3
   run_constrained:
-    - googleapis-common-protos >=11.66.0
+    - googleapis-common-protos >=1.66.0
     # most restrictive
     - grpcio >=1.68.0
     - lz4 >=3.1.3
