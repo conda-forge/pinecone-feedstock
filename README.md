@@ -150,6 +150,3 @@ Feedstock Maintainers
 * [@isuruf](https://github.com/isuruf/)
 * [@xylar](https://github.com/xylar/)
 
-
-<!-- dummy commit to enable rerendering -->
-
