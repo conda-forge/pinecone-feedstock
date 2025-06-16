@@ -1,5 +1,5 @@
 {% set name = "pinecone" %}
-{% set version = "7.0.2" %}
+{% set version = "7.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pinecone-{{ version }}.tar.gz
-  sha256: ff17f6ac798979adf0df0817e8f1d356a3363768f42e341b2a47f2bf895eb46a
+  sha256: f8448f361806515b6e0e9c4e67ec0b14ce7efdbd98429925f836ee5f6cd83de4
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -23,7 +23,7 @@ requirements:
     - python >={{ python_min }}
     - typing_extensions >=3.7.4
     # most restrictive
-    - urllib3 >=1.26.5
+    - urllib3 >=1.26.0
     - certifi >=2019.11.17
     - pinecone-plugin-interface >=0.0.7,<0.0.8
     - python-dateutil >=2.5.3
