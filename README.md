@@ -1,5 +1,5 @@
-About pinecone-feedstock
-========================
+About pinecone-split-feedstock
+==============================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pinecone-feedstock/blob/main/LICENSE.txt)
 
@@ -32,27 +32,29 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-pinecone-green.svg)](https://anaconda.org/conda-forge/pinecone) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pinecone.svg)](https://anaconda.org/conda-forge/pinecone) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pinecone.svg)](https://anaconda.org/conda-forge/pinecone) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pinecone.svg)](https://anaconda.org/conda-forge/pinecone) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pinecone--with--asyncio-green.svg)](https://anaconda.org/conda-forge/pinecone-with-asyncio) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pinecone-with-asyncio.svg)](https://anaconda.org/conda-forge/pinecone-with-asyncio) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pinecone-with-asyncio.svg)](https://anaconda.org/conda-forge/pinecone-with-asyncio) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pinecone-with-asyncio.svg)](https://anaconda.org/conda-forge/pinecone-with-asyncio) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pinecone--with--grpc-green.svg)](https://anaconda.org/conda-forge/pinecone-with-grpc) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pinecone-with-grpc.svg)](https://anaconda.org/conda-forge/pinecone-with-grpc) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pinecone-with-grpc.svg)](https://anaconda.org/conda-forge/pinecone-with-grpc) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pinecone-with-grpc.svg)](https://anaconda.org/conda-forge/pinecone-with-grpc) |
 
-Installing pinecone
-===================
+Installing pinecone-split
+=========================
 
-Installing `pinecone` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `pinecone-split` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `pinecone` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `pinecone, pinecone-with-asyncio, pinecone-with-grpc` can be installed with `conda`:
 
 ```
-conda install pinecone
+conda install pinecone pinecone-with-asyncio pinecone-with-grpc
 ```
 
 or with `mamba`:
 
 ```
-mamba install pinecone
+mamba install pinecone pinecone-with-asyncio pinecone-with-grpc
 ```
 
 It is possible to list all of the versions of `pinecone` available on your platform with `conda`:
@@ -122,17 +124,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating pinecone-feedstock
-===========================
+Updating pinecone-split-feedstock
+=================================
 
-If you would like to improve the pinecone recipe or build a new
+If you would like to improve the pinecone-split recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/pinecone-feedstock are
+Note that all branches in the conda-forge/pinecone-split-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
