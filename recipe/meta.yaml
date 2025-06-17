@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pinecone-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/p/pinecone/pinecone-{{ version }}.tar.gz
   sha256: f8448f361806515b6e0e9c4e67ec0b14ce7efdbd98429925f836ee5f6cd83de4
 
 build:
