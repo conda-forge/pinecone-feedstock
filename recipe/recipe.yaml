@@ -24,7 +24,7 @@ outputs:
         - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
     requirements:
       host:
-        - python ${{ python_min }}
+        - python ${{ python_min }}.*
         - hatchling
         - pip
       run:
@@ -49,7 +49,7 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python ${{ python_min }}
+        - python ${{ python_min }}.*
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
@@ -71,7 +71,7 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python ${{ python_min }}
+        - python ${{ python_min }}.*
       run:
         - python >=${{ python_min }}
         - ${{ pin_subpackage(name, upper_bound='x.x.x.x.x.x') }}
