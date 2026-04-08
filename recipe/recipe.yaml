@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pinecone
-  version: "8.1.1"
+  version: "8.1.2"
 
 recipe:
   name: ${{ name|lower }}-split
@@ -10,7 +10,7 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/p/pinecone/pinecone-${{ version }}.tar.gz
-  sha256: 077d42d0996969b1dbc9ad433a30be439f12c5dcad1bde647d5e39db97b16e78
+  sha256: a86d433cd2fec85b118ec19a44ee740a687c6b8172f1aecace83137f00c0741f
 
 build:
   number: 0
