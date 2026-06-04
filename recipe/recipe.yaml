@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pinecone
-  version: "9.0.1"
+  version: "9.1.0"
 
 package:
   name: pinecone
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pinecone/pinecone-${{ version }}.tar.gz
-  sha256: 3ca2dc3dd7f72102ac6387dd727192fa9c4bfcf08acf6f8c68218d91ca1b9b66
+  sha256: d53fe6f4978ab0642eb2d3a0ee3b2576ccfeebaa11e0690b18e67dac4e057047
 
 build:
   number: 0
