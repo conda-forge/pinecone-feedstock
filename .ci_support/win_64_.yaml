@@ -7,9 +7,9 @@ channel_sources:
 channel_targets:
 - conda-forge main
 libprotobuf:
-- 6.31.1
+- 7.35.1
 python_min:
-- '3.10'
+- '3.11'
 rust_compiler:
 - rust
 target_platform:
