@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pinecone
-  version: "10.0.0"
+  version: "10.1.0"
 
 package:
   name: pinecone
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pinecone/pinecone-${{ version }}.tar.gz
-  sha256: 6066bbe9a7ae1d667cde08d262deb6fbea6feb35deb9177dd47141b55bbd9833
+  sha256: cfbb951e578b447337dc5317d7d00c09d16327521e38082ba8ca9dda280b9d0f
 
 build:
   number: 0
@@ -49,7 +49,7 @@ requirements:
     # start httpx[http2]
     - h2 >=3,<5
     # end httpx[http2]
-    - msgspec >=0.19,<0.22
+    - msgspec >=0.19,<0.23
     - orjson >=3.11,<4
     - anyio >=4.0
 
