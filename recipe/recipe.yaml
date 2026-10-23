@@ -58,7 +58,9 @@ tests:
       imports:
         - pinecone
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Pinecone client and SDK
