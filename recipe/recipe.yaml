@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pinecone
-  version: "10.1.0"
+  version: "10.2.0"
 
 package:
   name: pinecone
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pinecone/pinecone-${{ version }}.tar.gz
-  sha256: cfbb951e578b447337dc5317d7d00c09d16327521e38082ba8ca9dda280b9d0f
+  sha256: 747d646579db7315fc5a6689336d9d22406c2674163d02c511d5fb39ab1d7744
 
 build:
   number: 0
@@ -58,7 +58,9 @@ tests:
       imports:
         - pinecone
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Pinecone client and SDK
